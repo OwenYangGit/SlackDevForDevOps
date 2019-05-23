@@ -1,0 +1,13 @@
+version: "3.7"
+services:
+  
+  jupyter-notebook:
+    image: jupyter/base-notebook:python-3.7.3
+    ports:
+      - 80:8888
+    volumes:
+      - ./data:/home/jovyan/work/
+    environment:
+      - GRANT_SUDO=yes
+    user: root
+    command: start-notebook.sh --NotebookApp.token=''
