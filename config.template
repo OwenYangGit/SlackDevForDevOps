@@ -1,0 +1,9 @@
+###
+This file is for input Slack incoming-webhook url , and offical documents to reocommend this url do not write in to the code file (.py)
+
+Reference : 
+https://api.slack.com/docs/oauth-safety
+
+{
+    "SLACK_WEBHOOK_URL":"https://hooks.slack.com/service/[your incoming-webhook url]"
+}

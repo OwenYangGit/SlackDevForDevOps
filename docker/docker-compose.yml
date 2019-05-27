@@ -7,7 +7,9 @@ services:
       - 80:8888
     volumes:
       - ../data:/home/jovyan/work/
-    environment:
-      - GRANT_SUDO=yes
-    user: root
+      - ../config:/home/jovyan/work/config
+# If want to poweruser to get something system package , you can open this setting to get system admin permission , but this option will make this developement environment not safely
+#    environment: 
+#      - GRANT_SUDO=yes
+#    user: root
     command: start-notebook.sh --NotebookApp.token=''
