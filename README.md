@@ -6,3 +6,13 @@ For test something devops flow with slack
 2. docker-compose up -d
 3. open browser , input url "localhost"
 
+---
+
+# About Lambda_get_logs code
+- Develope with cloudwatch auto send alarm notification to slack channel , and use CloudWatch -> SNS -> lambda function to make it !
+
+1. This code is put on aws lambda function to cache cloudwatch alarm data
+2. Pipe cloudwatch alarm data to get in alarm status [instance id , metric name]
+3. Intergation slack notification 
+
+
