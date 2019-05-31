@@ -7,7 +7,8 @@ services:
       - 80:8888
     volumes:
       - ../data:/home/jovyan/work/
-      - ../config:/home/jovyan/work/config
+      - ../config:/home/jovyan/.aws/config
+      - ../credentials:/home/jovyan/.aws/credentials
 # If want to poweruser to get something system package , you can open this setting to get system admin permission , but this option will make this developement environment not safely
 #    environment: 
 #      - GRANT_SUDO=yes

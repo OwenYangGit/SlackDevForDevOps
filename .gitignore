@@ -1,2 +1,4 @@
 config
+credentials
 data/.ipynb_checkpoints/*
+docker/docker-compose.yml
